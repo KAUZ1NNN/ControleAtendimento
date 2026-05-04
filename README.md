@@ -14,7 +14,6 @@ Sistema para gerenciamento de chamados de suporte.
 2. Executar script em /database/script.sql
 
 ### Backend
-cd backend
 dotnet run
 
 ### Frontend
