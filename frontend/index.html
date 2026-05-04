@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Chamados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Controle de Chamados</h1>
+
+<div class="card">
+    <h2>Criar Chamado</h2>
+    <input id="titulo" placeholder="Título">
+    <input id="descricao" placeholder="Descrição">
+    <select id="setorId"></select>
+
+    <select id="prioridadeId"></select>
+
+    <button onclick="criarChamado()">Criar Chamado</button>
+</div>
+
+<div class="card">
+    <h2>Chamados</h2>
+    <button onclick="listarChamados()">Atualizar</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Setor</th>
+                <th>Prioridade</th>
+                <th>Status</th>
+                <th>Tempo</th>
+                <th>Atrasado</th>
+                <th>Solução</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
